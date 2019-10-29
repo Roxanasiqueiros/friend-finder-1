@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  <div class="container">
+    <h2>Please fill out the survey and press the submit buttom at the botton of the page.</h2>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+    <hr>
+    <h4>Link to a great photo that really shows your personality (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+    <hr>
+    <h4>Question 1: You love horror movies.</h4>
+    <select class="chosen-select" id="q1" style="width: 200px">
+        <option></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 2: You enjoy shopping.</h4>
+    <select class="chosen-select" id="q2" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 3: You enjoy reading or audibles.</h4>
+    <select class="chosen-select" id="q3" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 4: You love coffee</h4>
+    <select class="chosen-select" id="q4" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 5: It's better to stand alone, than to be surrounded by people who don't value you.</h4>
+    <select class="chosen-select" id="q5" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 6: You enjoy working/sports.</h4>
+    <select class="chosen-select" id="q6" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 7: Education is important to you.</h4>
+    <select class="chosen-select" id="q7" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 8: You are in control of your emotions.</h4>
+    <select class="chosen-select" id="q8" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 9: You believe being faithfull in a relationship is important.</h4>
+    <select class="chosen-select" id="q9" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <h4>Question 10: You would like to have children one day.</h4>
+    <select class="chosen-select" id="q10" style="width: 200px">
+            <option></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+    </select>
+      
+      
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Your Perfect Match is....</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2 id="bestMatchName"></h2>
+              <img id="bestMatchImg" src="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Submit and get your match!
+          </button>
+  </div>
+    <script type="text/JavaScript">
+    
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            let newData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+            
+            $.post("/api/friends", newData,
+             function(data) {
+                 $("#bestMatchName").text(data.name);
+                 $("#bestMatchImg").attr("src", data.photo);
+                 $("#bestMatchImg").attr("width", "400px");
+                 $("#bestMatchImg").attr("height", "500px");
+               
+                 console.log(data);
+                
+            });
+        });
+    </script>
+  </body>
+</html>
